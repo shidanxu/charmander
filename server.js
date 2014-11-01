@@ -1,7 +1,7 @@
 // Lead author: Shidan Xu and Donglai Wei
 
 // global variable
-deploy = false;
+deploy = true;
 
 // load configuration
 var path = require('path');

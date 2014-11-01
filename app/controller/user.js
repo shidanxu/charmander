@@ -1,11 +1,7 @@
 // Lead author: Shidan Xu
 
-var Mongoose = require('mongoose');
-var MFA = Mongoose.model('MFA');
-var Artwork = Mongoose.model('Artwork');
-var Gallery = Mongoose.model('Gallery');
+
 var path = require('path');
-var MyUtil = require(path.join(config.controllers_path, 'util'));
 // -------------------------
 
 
@@ -21,5 +17,5 @@ Response:
 */
 // Show one artwork
 exports.homepage = function(req, res) {
-  res.render('/html/userhome.html');
+  res.render('userhome.ejs');
 };
