@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <!--link rel='stylesheet' href='/stylesheets/style.css' /-->
+  </head>
+  <body>  
+      <div>
+        <h1>Map: <%= map_name %></h1>
+      </div>
+    <div><a href="del_all?name=<%= map_name%>">Delete all Edges/Nodes? </a></div>
+    <h3>List of Nodes</h3>
+    <% for(var i = 0; i < nodes.length; i++){ %>
+    	<div>
+    		name: <%= nodes[i].name %>, x: <%= nodes[i].x %> , y: <%= nodes[i].y %>
+    	</div>
+    <%}%>
+    <div><a href="del_node?name=<%= map_name%>">Delete all Nodes? </a></div>
+    <br/><br/>
+    <h3>List of Edges</h3>
+    <% for(var i = 0; i < edges.length; i++){ %>
+      <div>
+        name: <%= edges[i].name %>
+      </div>
+    <%}%>
+    <div><a href="del_edge?name=<%= map_name%>">Delete all Edges? </a></div>
+<br/><br/>
+  </body>
+</html>
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.csv.js"></script>
+</head>
+<body>
+
+<h1>Edit a map node:</h1>
+<form action="/mfa/map/create" method="post">
+<table>
+<tr><td>Map Name</td>
+    <td>Access Number</td>
+    <td>Name</td>
+    <td>Location</td>
+    <td>On view</td>    
+    </tr>
+<tr>
+    <td><input name="mapName" type="text"></td>
+    <td><input name="artworkAccessNumber" type="text"></td>
+    <td><input name="artworkAccessNumber" type="text"></td>
+    <td><input name="artworkAccessNumber" type="text"></td>
+    <td><input name="artworkAccessNumber" type="text"></td>
+    <td><input type="submit" name="submit_node" value="Submit"></td>
+     </tr>
+  
+  </table>
+</form>
+<br/>
+<br/>
+
+<h1>Edit a map edge:</h1>
+<form action="/mfa/map/create" method="post">
+    Map Name: <input name="artworkName" type="text">
+    access number: <input name="artworkAccessNumber" type="text">
+    name: <input name="artworkAccessNumber" type="text">
+    location: <input name="artworkAccessNumber" type="text">
+    on view status:<input name="artworkAccessNumber" type="text">
+  <input type="submit" name="submit_node" value="Submit">
+</form>
+<br/>
+<br/>
+
+<h1>Edit a map floor plan:</h1>
+<form  action="/mfa/map/create" method="post">
+        Name: <input name="artworkName" type="text">
+        Upload floor plan image: <input name="artworkAccessNumber" type="text">
+        <input type="submit" name="submit_upload" value="Upload">
+      </form>
+      <br/>
+      <br/>
+
+<h1>Upload csv files:</h1>
+<div>
+<form  action="/mfa/map/upload" enctype="multipart/form-data" id="form_upload" method="post">
+<input type="file" id="myFile" name="myFile" />
+<!--button onclick="abortRead();">Cancel read</button-->
+<input type="submit" name="submit_upload" value="Upload">
+</form>
+<div id="byte_content"></div>
+</body>
+</html>

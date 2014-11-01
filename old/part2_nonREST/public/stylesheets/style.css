@@ -1,0 +1,19 @@
+body {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('/img/background/bg1.jpg'); 
+  background-size: cover;
+  text-align: left;
+}
+header {
+    text-align:center;
+    padding:5px;
+}
+
+#searchFunction{
+	position:relative; 
+	left:300px; top:100px;
+}
+
+input { 
+	font: 20px "Chalkboard", Helvetica, Arial;
+} 

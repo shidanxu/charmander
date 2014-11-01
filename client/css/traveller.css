@@ -1,0 +1,73 @@
+/* Lead author: Neil Gurram */
+body {
+	padding: 20px;
+	background: #333;	
+	font-family: 'Gudea', Arial, Helvetica, sans-serif;
+}
+.box-one {background-color:#FFF; position: relative;}
+.box-two {background-color:#CCC; position: relative; }
+.box-three {background-color:#CCC; position: relative; }
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+form{
+	color: #FFF;
+	position: absolute; 
+   	top: 50px; 
+   	text-align: center; 
+   	width: 100%; 
+}
+p {
+	color: #666;	
+	font-size: 12px;
+	position: absolute; 
+   	top: 0px; 
+   	left: 0px; 
+   	width: 100%; 
+}
+h1 {
+	margin-top: 0;
+	position: absolute; 
+   	top: 0px; 
+   	left: 0px; 
+   	width: 100%; 
+   	color: #FFF;
+}
+p.nav, h2, h3, h4, h5, h6 {
+	color: #FFF;
+	position: absolute; 
+   	top: 0px; 
+   	left: 0px; 
+   	text-align: center;
+   	width: 100%; 
+}
+p.nav {
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	text-align: center;
+	width: 100%;	
+}
+p.nav a {
+	color: #333;
+	padding: 4px 8px;
+	margin-right: 10px;
+	background: #FFF;	
+}
+input[type=text] {
+	padding:5px; border:2px solid #ccc; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 200px;
+	&:focus {
+		background: #FFFDF2;
+	}
+}
+input[type=submit] {padding:5px 15px; background:#ccc; border:0 none;
+cursor:pointer;
+-webkit-border-radius: 5px;
+border-radius: 5px; }

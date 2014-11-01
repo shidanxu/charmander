@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <!--link rel='stylesheet' href='/stylesheets/style.css' /-->
+  </head>
+  <body>
+    <div><a href="/"> Go to home page </a></div>
+    <h1>List of items</h1>
+    <% for(var i = 0; i < items.length; i++){ %>
+    	<div>
+    		name: <%= items[i].name %>, access number: <%= items[i].accessNumber %>
+    	</div>
+    <%}%>
+    <div><a href="del">Want to delete all items? </a></div>
+  </body>
+</html>
+
+

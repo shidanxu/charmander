@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Waaaaaaaay</title>
+    <!--link rel='stylesheet' href='/stylesheets/style.css' /-->
+    <script src="/js/visualization/graphics.js"></script>
+    
+    <style>
+        #canvas_container {position: absolute; left: 0px; top: 0px; width: 1762px; height: 1650px;}
+    </style>
+  </head>
+  <body style="background-image: url('/img/floorplan/fplan_3.png'); background-size: 1762px;">
+    <div id="canvas_container">
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="/js/visualization/draw.js">
+    </script>
+    <script>
+    var edges = <%- JSON.stringify(wayEdges) %>
+    drawpath(edges);
+  </script>
+  </body>
+</html>

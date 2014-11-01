@@ -1,0 +1,37 @@
+/* Lead author: Neil Gurram */
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 125px;
+}
+
+label {
+    color: #2D2D2D;
+    font-size: 15px;
+}
+
+form, input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+form {
+	display: block;
+    width: 300px;
+    float: left;
+}
+.mfaDB{
+    float: left;
+}
+.left-div {
+    float: left;
+    width: 400px;
+    height: 350px;
+    margin-right: 8px;
+    background-color: linen;
+}
+.right-div {
+    float: left;
+    background-color: lime;
+}

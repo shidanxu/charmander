@@ -1,0 +1,7 @@
+# general: no temp file
+.*
+!.gitignore
+
+# node: no debug log/modules
+npm-debug.log
+node_modules
